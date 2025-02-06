@@ -1,0 +1,30 @@
+#map {
+    height: 530px;
+    width: 100%;
+}
+.address-popup {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#filter-container {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    z-index: 1000; 
+    display: block !important;
+    width: 200px;
+}
+
+.filter-checkbox {
+    margin: 5px 0;
+    font-size: 14px;
+}
+ .custom-icon{
+    color: red;
+    font-size: 20px;
+}
