@@ -1,30 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    z-index: 1000;
+}
 #map {
-    height: 530px;
-    width: 100%;
+    flex-grow: 1;
+    height: 100vh;
+}
+.custom-icon {
+    color: red;
+    font-size: 28px;
+}
+h5{
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .address-popup {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-#filter-container {
-    position: absolute;
-    top: 90px;
-    left: 10px;
-    background: white;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid red;
-    z-index: 1000; 
-    display: block !important;
-    width: 200px;
+    max-width: 200px;
 }
-
-.filter-checkbox {
-    margin: 5px 0;
-    font-size: 14px;
+.filter-section {
+    margin-bottom: 20px;
 }
- .custom-icon{
-    color: red;
-    font-size: 20px;
+.filter-section h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 5px;
 }
